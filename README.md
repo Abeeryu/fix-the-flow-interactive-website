@@ -6,7 +6,16 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
 ## User Story
-<!-- Schrijf de user story waar je aan hebt gewerkt  -->
+
+### De user stories die wij hebben gekozen staan hier onder.
+
+1. Als gebruiker wil ik aangepaste beoordelingspunten kunnen creëren, zodat ik een betere controle heb over de kwaliteiten van het object dat ik waardeer.
+
+2. Als gebruiker wil ik een chat formulier kunnen gebruiken om makelijk vragen te stellen over huizen of hun profiel.
+
+3. Als gebruiker wil ikeen filter systeem kunnen gebruiken om makkelijk plaatsen te laten vinden , prijzen, datum en score.
+
+4. Als gebruiker wil ik een dropdown (voor de eerste pagina) kunnen gebruiken om makelijk te opslaan in lijsten, verwijderen of delen.
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
