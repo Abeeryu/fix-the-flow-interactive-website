@@ -1,0 +1,573 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(assets/ProximaNova/ProximaNova-Regular_2607783814[2339].otf);
+}
+
+:root {
+--primarycolor: #F7A100;
+--secondarycolor: white;
+--primary-text-color: #333333;
+--secundary-text-color: white;
+--footer-color: #CCCCCC;
+--border-radius-house: 1.5em;
+--border-radius-buttons: 10px;
+--button-hover-color:rgba(222,145,1,255);
+--house-article-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+
+body {
+    background-color:var(--secondarycolor) ;
+    font-family: "Proxima Nova";
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nav-bar {
+    height: 60px;
+}
+
+nav {
+    background-color: var(--primarycolor);
+    color: var(--secundary-text-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1em; 
+}
+
+nav ul li {
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 5px;
+    list-style-type: none;
+}
+
+.nav-list {
+    position: absolute;
+    right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secundary-text-color);
+    list-style-type: none;
+}
+
+
+.logo {
+   width: 100px;
+   margin-bottom: 1px;
+   margin-top: 5px;
+   margin-left: -122px;
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    padding-left: 5px;
+}
+
+
+h1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: -0.7rem;
+    text-align: left;
+    padding: 1em;
+    font-size: 1.6em;
+}
+
+.button {
+    padding-left: 5px;
+    padding-bottom: 5px;
+    
+}
+.button a {
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    background-color: var(--primarycolor);
+    margin: 5px 5px auto;
+    color: var(--secundary-text-color);
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    padding-left: 5px;
+    border-radius: var(--border-radius-buttons);
+}
+
+.button a:hover {
+    background-color: var(--button-hover-color);
+}
+
+
+h2 {
+    padding-left:0.2em;
+    text-align: left;
+    margin-bottom: 2em;
+    font-size: large;
+    font-weight: bold;
+}
+
+article {
+    margin: 0.5em;
+    position: relative;
+}
+
+ .house {
+    border-radius: 1.5em;
+    box-shadow: var(--house-article-shadow);
+    padding: 0.5em;
+    margin-bottom: 1em;
+ }
+ 
+ .img-house {
+    width: 288px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 1.5em;
+ }
+
+.info-house  {
+    list-style: none;
+    text-align: left;
+    padding-left: 0.5em;
+    margin-top: -17px;
+    margin-bottom: -2px;
+    padding-top: 0.2em;
+    
+}
+
+/* Scroll Container Styles */
+
+div.scroll-container {
+    background-color: #e6f2f7;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+}
+
+div.scroll-container .img-house {
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1.5em;
+    /* border: 2px solid #c8c7c7;  */
+}
+
+
+.slide-images {
+    width: 275px;
+    height: 300px;
+    object-fit: contain;
+    padding-right: 1em;
+    padding-left: 1px;
+    
+}
+
+.slider {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    object-fit: cover;
+    border: 2px solid red;
+}
+
+.list-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1em;
+}
+
+
+/* Style for dropdown button */
+.dropbtn {
+    background-color: var(--primarycolor);
+    color: var(--secondarycolor);
+    padding: 10px;
+    font-size: var(--body-text);
+    border: none;
+    cursor: pointer;
+    border-radius: 1.5em;
+    font-family: "Proxima Nova";
+    position: relative;
+}
+  
+/* Style for dropdown content */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: var(--secondarycolor);
+    min-width: 85px;
+    box-shadow: var(--box-shadow-color);
+    z-index: 1;
+}
+  
+/* Style for each content div */
+.dropdown-content div {
+    padding: 10px 5px;
+}
+  
+/* Highlight dropdown options on hover */
+.dropdown-content div:hover {
+    background-color: var(--secondarycolor);
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+   
+    /* Style the kebab menu container */
+.kebab-menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style the kebab icon */
+  .kebab-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 305px;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 305px;
+    width: 150px;
+  }
+  
+  /* Style the dropdown links */
+  .dropdown-content a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Change color on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu when the kebab icon is clicked */
+  .show {
+    display: block;
+  }
+
+  
+       
+footer {
+    background-color: var(--footer-color);
+    margin-top: 20px;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+li a{
+   text-decoration: none;
+}
+
+footer li {
+    padding: 10px;
+}
+
+footer ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 10px;
+}
+
+
+h2 {
+    padding-left:0.2em;
+    text-align: left;
+    margin-bottom: 2em;
+    font-size: large;
+    font-weight: bold;
+}
+
+article {
+    margin: 0.5em;
+    position: relative;
+}
+
+ .house {
+    border-radius: 1.5em;
+    box-shadow: var(--house-article-shadow);
+    padding: 0.5em;
+    margin-bottom: 1em;
+ }
+ 
+ .img-house {
+    width: 288px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 1.5em;
+ }
+
+.info-house  {
+    list-style: none;
+    text-align: left;
+    padding-left: 0.5em;
+    margin-top: -17px;
+    margin-bottom: -2px;
+    padding-top: 0.2em;
+    
+}
+
+
+@media (min-width:375px) {
+
+    .img-house {
+        width: 342px;
+        height: 130px;
+    
+     }
+
+}
+
+/* mobiel large  */
+
+@media (min-width:425px) {
+
+
+          .img-house {
+            width: 393px;
+            height: 140px;
+         }  
+        
+         /* .info-house  {
+            list-style: none;
+            text-align: left;
+            padding-left: 0.5em;
+            margin-top: -17px;
+            margin-bottom: -2px;
+            padding-top: 0.2em;
+            
+        }
+      
+        h2 {
+            padding-left:0.2em;
+            text-align: left;
+            margin-bottom: 2em;
+            font-size: large;
+            font-weight: bold; */
+        
+
+        .logo {
+            width: 100px;
+            margin-bottom: 1px;
+            margin-top: 5px;
+            margin-left: -175px;
+         }
+
+         h1 {
+            margin-left: 0.5rem;
+            text-align: center;
+        }
+
+
+        footer li {
+            padding: 2px;
+        
+        }
+    
+         footer ul  {
+            padding: 10px;
+         }
+       
+        
+        
+}
+
+
+
+   /* tablet */
+
+ @media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    article {
+       margin: 0.5em;
+       position: relative;
+       
+    }
+    
+    .img-house {
+        width: 350px;
+        height: 140px;
+     }  
+
+     .logo {
+        width: 100px;
+        margin-bottom: 1px;
+        margin-top: 5px;
+        margin-left: -345px;
+     }
+     
+     .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+
+     footer {
+        display: flex;
+        flex-direction: row;
+     
+     }
+
+     footer li {
+        padding-left: 15px;
+
+     }
+
+ 
+    }
+
+/* laptop */
+
+@media (min-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    article {
+        margin-left: 1em;
+        /* padding: 3px;   */
+    } 
+
+    .info-house  {
+        list-style: none;
+        text-align: left;
+        padding-left: 0.5em;
+        margin-top: -17px;
+        margin-bottom: -2px;
+        padding-top: 0.2em;
+        
+    }
+  
+    h2 {
+        padding-left:0.2em;
+        text-align: left;
+        margin-bottom: 2em;
+        font-size: large;
+        font-weight: bold;
+    } 
+
+    .img-house {
+        width: 335px;
+        /* height: 150px; */
+        object-fit: cover;
+        border-radius: 1.5em;
+     }
+
+    .house {
+        border-radius: 1.5em;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        padding: 0.5em;
+        margin-bottom: 0.5em;
+        width: 350px;
+     }
+    
+     .logo {
+        width: 100px;
+        margin-bottom: 1px;
+        margin-top: 5px;
+        margin-left: -363px;
+     }
+
+     .button {
+        /* padding-left: 150px;  */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding-bottom: 5px;
+    }
+
+     footer {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+        align-content: center;
+        justify-content: center;
+     }
+
+     footer li {
+        padding-left: 17px;
+        
+     }
+
+
+}
+
+@media (min-width: 1440px) {
+    article {
+        margin-left: 1em;
+        /* padding: 3px */
+        position: relative;
+    } 
+    
+     .logo {
+        width: 100px;
+        margin-bottom: 1px;
+        margin-top: 5px;
+        margin-left: -565px;
+     }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+   
+    footer li{
+        padding: 10px;
+    }
+
+    footer ul {
+        padding: 10px;
+    }
+}
