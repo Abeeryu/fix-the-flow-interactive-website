@@ -23,3 +23,13 @@ window.addEventListener('click', function(event) {
     }
   }
 });
+
+
+
+const dialog = document.querySelector("dialog");
+ 
+const chat = document.getElementById("chat");
+ 
+chat.addEventListener("click", () => {
+  dialog.showModal();
+});

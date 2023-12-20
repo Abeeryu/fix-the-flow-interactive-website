@@ -41,6 +41,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     font-size: 1em; 
+    border-radius: var(--border-radius-buttons);
 }
 
 nav ul li {
@@ -188,7 +189,15 @@ div.scroll-container .img-house {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 1em;
+    /* margin-left: 4em; */
+}
+
+.list-header a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    margin-right: 20px;
 }
 
 
@@ -200,33 +209,36 @@ div.scroll-container .img-house {
     font-size: var(--body-text);
     border: none;
     cursor: pointer;
-    border-radius: 1.5em;
+    border-radius: var(--border-radius-buttons);
     font-family: "Proxima Nova";
-    position: relative;
+    /* position: relative; */
+    margin-right: 1210px;
 }
   
 /* Style for dropdown content */
-.dropdown-content {
+.dropdown-content2 {
     display: none; /* Hidden by default */
     position: absolute;
     background-color: var(--secondarycolor);
     min-width: 85px;
     box-shadow: var(--box-shadow-color);
     z-index: 1;
+
 }
   
 /* Style for each content div */
-.dropdown-content div {
+.dropdown-content2 div {
     padding: 10px 5px;
+    background-color: lightgray;
 }
   
 /* Highlight dropdown options on hover */
-.dropdown-content div:hover {
-    background-color: var(--secondarycolor);
+.dropdown-content2 div:hover {
+    background-color: white;
 }
   
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content2 {
     display: block;
 }
 
@@ -254,6 +266,7 @@ div.scroll-container .img-house {
     z-index: 1;
     margin-left: 305px;
     width: 150px;
+    /* margin-right: 100px; */
   }
   
   /* Style the dropdown links */
@@ -266,7 +279,7 @@ div.scroll-container .img-house {
   
   /* Change color on hover */
   .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: white;
   }
   
   /* Show the dropdown menu when the kebab icon is clicked */
@@ -351,6 +364,11 @@ article {
     
      }
 
+     #chat-now {
+        margin-left: 210px;
+    }
+
+
 }
 
 /* mobiel large  */
@@ -431,6 +449,10 @@ article {
         height: 140px;
      }  
 
+     #chat-now {
+        margin-left: 590px;
+    }
+
      .logo {
         width: 100px;
         margin-bottom: 1px;
@@ -478,6 +500,10 @@ article {
         margin-left: 1em;
         /* padding: 3px;   */
     } 
+
+    #chat-now {
+        margin-left: 575px;
+    }
 
     .info-house  {
         list-style: none;
@@ -562,6 +588,10 @@ article {
         justify-content: center;
         align-items: center
     }
+
+    #chat-now {
+        margin-left: 950px;
+    }
    
     footer li{
         padding: 10px;
@@ -570,4 +600,110 @@ article {
     footer ul {
         padding: 10px;
     }
+}
+
+.edge {
+    height: 30px;
+    width: 280px;
+    background-color: var(--primarycolor);
+}
+ 
+#chat {
+    background-color: var(--primarycolor);
+    color: var(--secondarycolor);
+    font-size: 16px;
+    margin-left: 250px;
+    bottom: 0;
+    right: 50px;
+    padding: 10px 10px;
+    border-radius: 12px 12px 12px 12px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    z-index: 1;
+}
+ 
+dialog {
+    display: absolute;
+    top: 0;
+    bottom: 0;
+    /* padding-right: 20px; */
+    /* padding-left: 5px; */
+    background: var(--secondarycolor);
+    max-width: 280px;
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+    margin-left: 20px;
+    border: 1px solid var(--primarycolor);
+    margin-top: 100px;
+}
+ 
+ 
+dialog .active {
+    bottom: 0;
+    transition: 0.5s ease-in-out;
+}
+ 
+dialog .close {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    background: var(--primarycolor);
+    top: 0;
+}
+ 
+dialog button {
+    margin-left: -20px;
+ 
+}
+ 
+dialog p {
+    margin-bottom: 10px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+ 
+dialog form {
+    padding: 20px 36px;
+    text-align: left;
+}
+ 
+dialog label {
+    margin-bottom: 6px;
+    padding-left: 20px;
+  
+}
+ 
+dialog input {
+    margin-bottom: 6px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+ 
+}
+ 
+#checkbox {
+    margin-left: -15px;
+    margin-bottom: -16px;  
+}
+ 
+ 
+#start {
+    background-color: var(--primarycolor);
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: -2px;
+    cursor: pointer;
+    letter-spacing: 2px;
+ 
 }
