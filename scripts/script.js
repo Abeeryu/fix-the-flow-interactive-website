@@ -6,16 +6,16 @@
 // })
 
 
-// Get the kebab icon and dropdown content
+// De kebab icon and dropdown Content
 var kebabIcon = document.querySelector('.kebab-icon');
 var dropdownContent = document.querySelector('.dropdown-content');
 
-// Toggle the 'show' class when the kebab icon is clicked
+// Ik heb toggle (show) gebruikt om de kebab icon te werken als het wordt geklikt.
 kebabIcon.addEventListener('click', function() {
   dropdownContent.classList.toggle('show');
 });
 
-// Close the dropdown if the user clicks outside of it
+// Ik heb remove (show) gebruikt to close the dropdown if the gebruiker outside the menu clickt.
 window.addEventListener('click', function(event) {
   if (!event.target.matches('.kebab-icon')) {
     if (dropdownContent.classList.contains('show')) {
