@@ -41,7 +41,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     font-size: 1em; 
-    border-radius: var(--border-radius-buttons);
+    /* border-radius: var(--border-radius-buttons); */
 }
 
 nav ul li {
