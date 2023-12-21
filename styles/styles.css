@@ -197,7 +197,7 @@ div.scroll-container .img-house {
     font-size: 25px;
     font-family: "Proxima Nova";
     font-weight: bold;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 
@@ -212,7 +212,7 @@ div.scroll-container .img-house {
     border-radius: var(--border-radius-buttons);
     font-family: "Proxima Nova";
     /* position: relative; */
-    margin-right: 1210px;
+    margin-right: 1100px;
 }
   
 /* Style for dropdown content */
@@ -266,7 +266,7 @@ div.scroll-container .img-house {
     z-index: 1;
     margin-left: 305px;
     width: 150px;
-    /* margin-right: 100px; */
+    /* margin-right: 300px; */
   }
   
   /* Style the dropdown links */
