@@ -365,7 +365,7 @@ article {
      }
 
      #chat-now {
-        margin-left: 210px;
+        margin-left: 305px;
     }
 
 
@@ -379,7 +379,11 @@ article {
           .img-house {
             width: 393px;
             height: 140px;
-         }  
+         } 
+         
+         #chat {
+            margin-left: 355px;
+        }
         
          /* .info-house  {
             list-style: none;
@@ -405,6 +409,11 @@ article {
             margin-top: 5px;
             margin-left: -175px;
          }
+
+         .img-house {
+            width: 393px;
+            height: 140px;
+        }
 
          h1 {
             margin-left: 0.5rem;
@@ -440,7 +449,7 @@ article {
 
     article {
        margin: 0.5em;
-       position: relative;
+       /* position: relative; */
        
     }
     
@@ -450,7 +459,7 @@ article {
      }  
 
      #chat-now {
-        margin-left: 590px;
+        margin-left: 680px;
     }
 
      .logo {
@@ -502,7 +511,7 @@ article {
     } 
 
     #chat-now {
-        margin-left: 575px;
+        margin-left: 675px;
     }
 
     .info-house  {
@@ -573,8 +582,16 @@ article {
     article {
         margin-left: 1em;
         /* padding: 3px */
-        position: relative;
+        /* position: relative; */
     } 
+
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
     
      .logo {
         width: 100px;
@@ -589,8 +606,8 @@ article {
         align-items: center
     }
 
-    #chat-now {
-        margin-left: 950px;
+    #chat {
+        margin-left: 1050px;
     }
    
     footer li{
@@ -601,6 +618,38 @@ article {
         padding: 10px;
     }
 }
+
+
+@media (min-width: 1750px) {
+
+    .nav-list {
+        padding-right: 362px;
+    }
+
+    nav {
+        padding-right: 45px;
+    }
+
+    main {
+        gap: 0px 105px;
+        margin-left: 250px;
+        margin-right: 200px;
+    }
+
+    #chat {
+        margin-left: 955px;
+    }
+
+   article {
+     margin-left: -5.2rem;
+     margin-left: -5.2rem;
+   }
+
+   footer li {
+    padding-right: 75px;
+   }
+}
+
 
 .edge {
     height: 30px;
