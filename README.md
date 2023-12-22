@@ -17,10 +17,21 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 4. Als gebruiker wil ik een dropdown (voor de eerste pagina) kunnen gebruiken om makelijk te opslaan in lijsten, verwijderen of delen.
 
+### De user stories dat wij hebben aan gewerkt:
+
+1. Als gebruiker wil ik een dropdown (voor de eerste pagina) kunnen gebruiken om makelijk te opslaan in lijsten, verwijderen of delen.
+
+2. Als gebruiker wil ik een chat formulier kunnen gebruiken om makelijk vragen te stellen over huizen of hun profiel.
+
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Ik heb een micro interactie gemaakt en toegevoegd aan mijn werk.
+Ik heb een hamberger menu gemaakt voor de favoriete huiuzen van Funda.
+
+![Screenshot 2023-12-22 100534](https://github.com/Abeeryu/fix-the-flow-interactive-website/assets/144008500/874225a3-9f56-4b88-97be-948c6560fb89)
+
+Link naar mijn Github Pages:
+
+https://abeeryu.github.io/fix-the-flow-interactive-website/
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
